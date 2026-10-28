@@ -91,8 +91,8 @@ Ogni run salva:
 | Modello | Hardware | pass@1 coding | tok/s (1 utente) | Diario |
 |---|---|---|---|---|
 | Nanbeige4.3-33B (BF16, thinking) | 1x A100 80GB, vLLM 0.32 | **41,7%** (15/36; 0 risposte errate, 21 troncate a 28K token) | 23,3 | [2026-10-28](docs/journal/2026-10-28-nanbeige4.3-33b.md) |
-| Nanbeige4.3-33B (FP8, thinking) | 1x A100 80GB, vLLM 0.32 | _in corso_ | _in corso_ | idem |
-| Nanbeige4.3-33B (FP8, thinking off) | 1x A100 80GB, vLLM 0.32 | _in coda_ | idem | idem |
+| Nanbeige4.3-33B (FP8, thinking) | 1x A100 80GB, vLLM 0.32 | **25,0%** (9/36; 2 errate, 25 troncate) | 38,8 | idem |
+| Nanbeige4.3-33B (FP8, thinking off) | 1x A100 80GB, vLLM 0.32 | **36,1%** (13/36; 23 errate, 0 troncate; 1.758 token medi) | 38,8 | idem |
 
 ## Aggiungere un task
 

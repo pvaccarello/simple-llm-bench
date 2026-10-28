@@ -49,7 +49,7 @@ Ogni task ha:
 - `reference.py`: soluzione di riferimento, usata **solo** per validare i test (`bench.py validate`).
 
 Metriche:
-- **pass@1**: frazione di tentativi che passano *tutti* i test (con `--samples N` è la media su N campioni);
+- **pass@1**: probabilità che un singolo tentativo risolva il problema, cioè che passi *tutti* i suoi test (metrica introdotta con HumanEval, [Chen et al., 2021](https://arxiv.org/abs/2107.03374)). Con `--samples N` si stima, per ogni task, come c/N (c = tentativi corretti), poi si fa la media sui task. Con temperatura > 0 conviene N ≥ 3: con un solo campione il numero oscilla molto da un run all'altro;
 - **test score**: frazione media di test superati (credito parziale);
 - token generati (reasoning incluso), latenza, risposte troncate.
 

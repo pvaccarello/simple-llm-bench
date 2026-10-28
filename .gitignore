@@ -1,0 +1,6 @@
+.apikey
+.env
+__pycache__/
+*.pyc
+# le risposte complete dei modelli restano locali; i JSON di riepilogo si possono committare
+results/*/
